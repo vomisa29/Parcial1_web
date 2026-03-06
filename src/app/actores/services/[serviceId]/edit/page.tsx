@@ -1,16 +1,13 @@
+import ServiceEditPage from '@/modules/actores/pages/ServiceEditPage';
+import { getService } from '@/modules/actores/services/providerService';
+  
 export default async function EditServicePage({
   params,
-}: {
-  params: { serviceId: string };
-}) {
+  }: {
+    params: { serviceId: string };
+  }) {
   const { serviceId } = await params;
+  const  service =await getService(serviceId);
 
-  return (
-    <main className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">
-        Edición de Servicio con ID: {serviceId}
-      </h1>
-      {/* Form here */}
-    </main>
-  );
+  return <ServiceEditPage service={service} />;
 }

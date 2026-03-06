@@ -9,5 +9,7 @@ export function useActorsServices(id:string) {
     );
 
     deleteService(id);
+    
     showNotification("Service deleted successfully", "success");
+
 }
