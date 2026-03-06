@@ -20,6 +20,8 @@ const Header = () => {
           {/* We replaced all <a> tags with <Link> tags */}
           <Link href="/" className="px-3 hover:text-gray-300">Inicio</Link>
           <Link href="/actores/services/new" className="px-3 hover:text-gray-300">Crear Actor</Link>
+          <Link href="/peliculas" className="px-3 hover:text-gray-300">Peliculas</Link>
+          <Link href="/peliculas/services/new" className="px-3 hover:text-gray-300">Crear Pelicula</Link>
         </nav>
       </div>
     </header>
