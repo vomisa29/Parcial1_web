@@ -24,7 +24,7 @@ export default function ServicesPage() {
           <li key={service.id} className="p-4 border rounded-lg shadow-sm">
             <ActorLine
             id={service.id}
-            nombre={service.name}
+            name={service.name}
             nationality={service.nationality}
             photo={service.photo}
             birthDate={service.birthDate}

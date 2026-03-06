@@ -45,7 +45,7 @@ const ActorLine = ({ id, name, nationality, photo, birthDate, biography }: Actor
           </button>
 
           <button
-            onClick={() => deleteService({ id, name, nationality, photo, birthDate, biography })}
+            onClick={() => deleteService(id)}
             className="bg-yellow-400 text-black font-bold py-2 px-6 rounded hover:bg-yellow-500 disabled:bg-gray-300"
           >
             Borrar

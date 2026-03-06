@@ -35,5 +35,6 @@ export async function fetcher<T>(
   }
 
   // If the response is successful, we parse it as JSON.
+  console.log(response)
   return response.json() as Promise<T>;
 }

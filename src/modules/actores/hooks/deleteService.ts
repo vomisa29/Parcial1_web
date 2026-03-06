@@ -3,11 +3,11 @@
 import { deleteService } from "@/modules/actores/services/providerService";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
 
-export function useActorsServices(service:{ id:string, name:string, nationality:string, photo:string, birthDate:string, biography:string }) {
+export function useActorsServices(id:string) {
     const showNotification = useNotificationStore(
     (state) => state.showNotification
     );
 
-    deleteService(service);
+    deleteService(id);
     showNotification("Service deleted successfully", "success");
 }

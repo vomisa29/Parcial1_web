@@ -21,9 +21,8 @@ export const editService = (data: ServiceFormData): Promise<Service> => {
   });
 };
 
-export const deleteService = (data: ServiceFormData): Promise<Service> => {
-  return fetcher<Service>("/actors", {
-    method: "DELETE",
-    body: JSON.stringify(data), // We send the data as a JSON string
+export const deleteService = (id:string): Promise<string> => {
+  return fetcher<string>(`/actors/${id}`, {
+    method: "DELETE", // We send the data as a JSON string
   });
 };
